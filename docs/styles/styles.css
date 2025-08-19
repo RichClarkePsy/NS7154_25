@@ -1,0 +1,8 @@
+/* widen content a touch for figures/tables */
+.quarto-container { max-width: 1100px; }
+
+/* smaller code blocks on narrow screens */
+pre code { font-size: 0.9rem; }
+
+/* make collapsible callouts look neat */
+.callout { margin-top: 1rem; }
