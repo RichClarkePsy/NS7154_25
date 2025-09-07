@@ -1,8 +1,35 @@
-/* widen content a touch for figures/tables */
-.quarto-container { max-width: 1100px; }
+/* widen content a touch for figures/tables */ 
+.quarto-container { max-width: 2000px; } 
 
-/* smaller code blocks on narrow screens */
-pre code { font-size: 0.9rem; }
+/* smaller code blocks on narrow screens */ 
+pre code { font-size: 1rem; } 
 
-/* make collapsible callouts look neat */
+/* make collapsible callouts look neat */ 
 .callout { margin-top: 1rem; }
+
+h1.teal, h2.teal, h3.teal { color: #2a9d8f; }
+h1.amber, h2.amber, h3.amber { color: #ff8f00; }
+
+/* styles.css */
+.quarto-title-block .chapter-number { display: none; }
+.toc .toc-section-number, .sidebar .chapter-number { display: none; }
+
+.quarto-title-block {
+  text-align: center;
+}
+
+/* Centre Quarto figures and plain <img> */
+.quarto-figure,
+.quarto-figure > figure,
+.quarto-figure img,
+p > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;   /* kill any float so text doesn't wrap */
+}
+
+/* Make sure following text starts below any media/code */
+p, pre, .sourceCode, .cell-output, .cell-output-display {
+  clear: both;
+}
